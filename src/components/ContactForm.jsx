@@ -1,6 +1,8 @@
 // import React from 'react';
 
 // const ContactForm = () => (
+  
+
 //   <section id="contact" className="p-10 bg-white">
 //     <h3 className="text-3xl font-bold text-center mb-6">Contact Me</h3>
 //     <form className="mt-6 grid grid-cols-1 gap-4 max-w-md mx-auto">
@@ -27,94 +29,77 @@
 // );
 
 // export default ContactForm;
-import React, { useState, useRef } from 'react';
-import emailjs from 'emailjs-com';
+
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const ContactForm = () => {
-  // Use ref to clear the form after submission
-  const form = useRef();
+  const [result, setResult] = useState("");
 
-  // State to store form data
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+    formData.append("access_key", "6c4776c9-9b91-4329-8249-cc8e60ca5280");
 
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
 
-    emailjs
-      .sendForm(
-        'service_xphpdkj',  
-        'template_hhek4pq',  
-        form.current,       
-        'ZX9_CrT55cv-TgOnA'  
-      )
-      .then(
-        (response) => {
-          console.log('Message sent successfully', response);
-          alert('Message sent successfully!');
-          // Clear the form after successful submission
-          setFormData({ name: '', email: '', message: '' });
-        },
-        (error) => {
-          console.error('Error sending message', error);
-          alert('Failed to send message. Please try again.');
-        }
-      );
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success"
+      });
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
 
   return (
     <section id="contact" className="p-10 bg-white">
       <h3 className="text-3xl font-bold text-center mb-6">Contact Me</h3>
-      <form ref={form} onSubmit={handleSubmit} className="mt-6 grid grid-cols-1 gap-4 max-w-md mx-auto">
-        {/* Name input */}
+      <form 
+        className="mt-6 grid grid-cols-1 gap-4 max-w-md mx-auto" 
+        onSubmit={onSubmit}
+      >
         <input
           type="text"
-          name="from_name"  // This should match {{from_name}} in your template
-          value={formData.name}
-          onChange={handleChange}
+          name="name"
           placeholder="Your Name"
           className="input input-bordered w-full"
+          required
         />
-        
-        {/* Email input */}
         <input
           type="email"
-          name="reply_to"  // This should match {{to_name}} in your template (if necessary)
-          value={formData.email}
-          onChange={handleChange}
+          name="email"
           placeholder="Your Email"
           className="input input-bordered w-full"
+          required
         />
-        
-        {/* Message textarea */}
         <textarea
-          name="message"  // This should match {{message}} in your template
-          value={formData.message}
-          onChange={handleChange}
+          name="message"
           placeholder="Your Message"
           className="textarea textarea-bordered w-full"
           rows="4"
+          required
         ></textarea>
-        
-        {/* Submit button */}
         <button type="submit" className="btn btn-primary w-full">
           Send Message
         </button>
       </form>
+      {result && <p className="mt-4 text-center">{result}</p>}
     </section>
   );
 };
 
 export default ContactForm;
+

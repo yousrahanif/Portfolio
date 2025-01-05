@@ -18,7 +18,7 @@ const AboutSection = () => (
       <a
         href={resumePDF}
         download="Yousra_Hanif_Resume.pdf"
-        className="btn btn-secondary mx-2"
+        className=" btn btn-active btn-primary mx-2"
       >
         Download Resume
       </a>
