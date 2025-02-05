@@ -1,8 +1,11 @@
 import React from 'react';
-import profImg from '../images/prof.png';
+
 import aiImg from '../images/ai.png';
 import restaurantImg from '../images/restaurant.png';
-import flashcardImg from '../images/flashcard.png';
+
+import biodata from '../images/biodata.png'
+
+import donation from '../images/donation.png'
 
 const ProjectsSection = () => (
   <section id="projects" className="p-10 bg-gray-100">
@@ -11,22 +14,21 @@ const ProjectsSection = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Project 1 */}
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src={profImg} alt="Rate My Professor" className="w-full h-48 object-cover" />
+        <img src={biodata} alt="Matrimony Website" className="w-full h-80 object-cover" />
         <div className="p-6">
-          <h4 className="font-bold text-xl mb-3">Rate My Professor</h4>
+          <h4 className="font-bold text-xl mb-3">Find Your Better Half</h4>
           <p className="text-gray-700 mb-4">
-            Developed and deployed a web application using Next.js, React, OpenAI, and Pinecone, enabling users to query and receive detailed insights about professors by reading data from a custom database and external sources.
-          </p>
+          Developed LoveForever, a matrimonial web app enabling users to create and browse biodata profiles. Built with Node.js, React, and Flowbite for a seamless user experience.          </p>
           <div className="flex justify-between">
             <a
-              href="https://github.com/yousrahanif/Rate-My-Professor"
+              href="https://github.com/yousrahanif/findYourBetterHalf-Client"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline">
               GitHub Link
             </a>
             <a
-              href="https://rate-my-professor-sigma.vercel.app/"
+              href="https://matrimony-351f1.web.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline">
@@ -35,24 +37,23 @@ const ProjectsSection = () => (
           </div>
         </div>
       </div>
-      {/* Project 2 */}
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src={aiImg} alt="AI Customer Support System" className="w-full h-48 object-cover" />
+        {/* Project 4 */}
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src={donation} alt="Donation Application" className="w-full h-80 object-cover" />
         <div className="p-6">
-          <h4 className="font-bold text-xl mb-3">AI Customer Support System</h4>
+          <h4 className="font-bold text-xl mb-3">Donation Application</h4>
           <p className="text-gray-700 mb-4">
-            Built a dynamic customer support application using Next.js, React, and OpenAI, enabling users to ask questions and receive accurate, real-time responses through a sophisticated AI-driven interface.
-          </p>
+          Built a donation platform with campaign creation, secure payments, and personalized dashboards. Developed using React, Node.js, Express.js, MongoDB, and DaisyUI.          </p>
           <div className="flex justify-between">
             <a
-              href="https://github.com/yousrahanif/OpenAI"
+              href="https://github.com/yousrahanif/Donation-Platform-Client"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline">
               GitHub Link
             </a>
             <a
-              href="https://open-ai-six-beta.vercel.app/"
+              href="https://fundtogether-37491.web.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline">
@@ -61,14 +62,13 @@ const ProjectsSection = () => (
           </div>
         </div>
       </div>
-      {/* Project 3 */}
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src={restaurantImg} alt="E-commerce Restaurant Website" className="w-full h-48 object-cover" />
+        {/* Project 3 */}
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src={restaurantImg} alt="E-commerce Restaurant Website" className="w-full h-80 object-cover" />
         <div className="p-6">
           <h4 className="font-bold text-xl mb-3">E-commerce Restaurant Website</h4>
           <p className="text-gray-700 mb-4">
-            Implemented a robust e-commerce platform for restaurants using Node.js, React, and JSX. Facilitates secure menu browsing, food ordering, and seamless access to restaurant services.
-          </p>
+          Developed a robust e-commerce platform for restaurants using Node.js, React, and JSX, enabling secure menu browsing, food ordering, and seamless restaurant services.          </p>
           <div className="flex justify-between">
             <a
               href="https://github.com/yousrahanif/eCommerce-Restaurant-Website"
@@ -87,24 +87,23 @@ const ProjectsSection = () => (
           </div>
         </div>
       </div>
-      {/* Project 4 */}
+      {/* Project 2 */}
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src={flashcardImg} alt="Flashcard SaaS Application" className="w-full h-48 object-cover" />
+        <img src={aiImg} alt="AI Customer Support System" className="w-full h-80 object-cover" />
         <div className="p-6">
-          <h4 className="font-bold text-xl mb-3">Flashcard SaaS Application</h4>
+          <h4 className="font-bold text-xl mb-3">AI Customer Support System</h4>
           <p className="text-gray-700 mb-4">
-            Built a scalable web application for creating and managing flashcards using Next.js, React, Firebase, and Stripe. This SaaS solution enables users to efficiently create, organize, and study flashcards with integrated payment features for premium access.
-          </p>
+          Built a dynamic customer support app using Next.js, React, and OpenAI, allowing users to ask questions and receive real-time, accurate AI-driven responses.          </p>
           <div className="flex justify-between">
             <a
-              href="https://github.com/yousrahanif/Flashcard-SaaS"
+              href="https://github.com/yousrahanif/OpenAI"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline">
               GitHub Link
             </a>
             <a
-              href="https://flashcards-rho-amber.vercel.app/"
+              href="https://open-ai-six-beta.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline">
@@ -113,6 +112,8 @@ const ProjectsSection = () => (
           </div>
         </div>
       </div>
+    
+    
     </div>
   </section>
 );

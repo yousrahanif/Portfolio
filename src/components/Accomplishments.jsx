@@ -14,8 +14,7 @@ const Accomplishments = () => (
           <img
             src={camp}
             alt="Robotics Engineering Summer Camp"
-            className="w-full h-auto rounded-lg"
-          />
+            className="w-full h-80 object-cover"           />
         </a>
         <h4 className="font-bold text-lg mb-4">Instructed Robotics Engineering Summer Camp</h4>
         <p className="mb-4">
@@ -38,7 +37,8 @@ const Accomplishments = () => (
           <img
             src={panel}
             alt="Panelist for Software Engineering Event"
-            className="w-full h-auto rounded-lg"
+            // className="w-full h-auto rounded-lg"
+            className="w-full h-80 object-cover" 
           />
         </a>
         <h4 className="font-bold text-lg mb-4">Panelist for Software Engineering Event</h4>
@@ -62,7 +62,8 @@ const Accomplishments = () => (
           <img
             src={diploma}
             alt="Graduated Cum Laude"
-            className="w-full h-auto rounded-lg"
+            // className="w-full h-auto rounded-lg"
+            className="w-full h-80 object-cover" 
           />
         </a>
         <h4 className="font-bold text-lg mb-4">Graduated Cum Laude and Dean's List</h4>
