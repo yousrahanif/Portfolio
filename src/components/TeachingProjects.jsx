@@ -164,7 +164,7 @@ import bank from "../images/bank.png";
 
 const TeachingProjects = () => (
   <section id="teaching" className="p-10 bg-white">
-    <h3 className="text-3xl font-bold text-center mb-6">Teaching Projects</h3>
+    <h3 className="text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse">Teaching Projects</h3>
     <p className="text-center text-2xl mb-10">Here are some of the projects I’ve used to teach coding concepts:</p>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Scratch Projects */}
@@ -176,7 +176,7 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4">Scratch Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center">Scratch Projects</h4>
         <p className="mb-4">
           For kids aged 5-10, Scratch introduces block coding concepts through engaging projects.
           Students work on fun games like catching ghosts, maze navigation, and creative animations, 
@@ -192,7 +192,7 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4">Web Development Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center">Web Development Projects</h4>
         <p className="mb-4">
           For students passionate about web development, we build portfolios, school websites, 
           and interactive projects. These classes teach JavaScript, HTML, and CSS fundamentals, 
@@ -209,7 +209,7 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4">Python Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center">Python Projects</h4>
         <p className="mb-4">
           Designed for students aged 10 and up, Python classes use Pixelpad to explore advanced coding concepts. 
           Students learn about objects, dictionaries, and lists by creating interactive games like space shooters 
@@ -226,7 +226,7 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4">Java Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center">Java Projects</h4>
         <p className="mb-4">
           Targeting 9th and 10th graders preparing for AP Computer Science, Java classes focus on 
           classes, objects, and functions. Students create projects like GUI-based calculators to apply 

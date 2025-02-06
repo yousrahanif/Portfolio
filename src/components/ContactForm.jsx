@@ -66,7 +66,7 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="p-10 bg-white">
-      <h3 className="text-3xl font-bold text-center mb-6">Contact Me</h3>
+      <h3 className="text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse">Contact Me</h3>
       <form 
         className="mt-6 grid grid-cols-1 gap-4 max-w-md mx-auto" 
         onSubmit={onSubmit}

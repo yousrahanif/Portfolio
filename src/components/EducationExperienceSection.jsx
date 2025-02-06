@@ -4,7 +4,7 @@ import { FaUniversity, FaBriefcase } from "react-icons/fa";
 const EducationExperienceSection = () => {
   return (
     <section className="p-10 bg-gray-100 flex flex-col items-center text-center">
-      <h2 className="text-3xl font-bold mb-6">Education & Experience</h2>
+      <h2 className="text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse">Education</h2>
 
       {/* Educational Qualifications */}
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -29,7 +29,7 @@ const EducationExperienceSection = () => {
       </div>
 
       {/* Professional Experience */}
-      <h3 className="text-2xl font-bold mt-12 mb-6">Professional Experience</h3>
+      <h3 className="text-4xl font-extrabold text-center mt-6 mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse"> Work Experience</h3>
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
         <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg">
           <FaBriefcase className="text-5xl text-purple-500 mb-4" />

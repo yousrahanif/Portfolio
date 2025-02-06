@@ -37,7 +37,13 @@ const AboutSection = () => (
     id="about"
     className="p-10 bg-gray-100 flex justify-center items-center flex-col text-center"
   >
-    <h2 className="text-3xl font-bold mb-6">Who Am I</h2>
+    {/* <h2 className="text-3xl font-bold mb-6">Who Am I</h2> */}
+   
+<h2 className="text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse">
+  Who Am I
+</h2>
+
+
 
     {/* Visual Highlights */}
     <div className="grid md:grid-cols-3 gap-8 max-w-5xl">
