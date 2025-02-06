@@ -470,7 +470,7 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      name: "Find Your Better Half",
+      name: "LoveForever: Matrimony Webiste",
       image: biodata,
       description:
         "Crafted LoveForever, a user-friendly matrimonial platform allowing users to create and explore detailed biodata profiles with ease.",

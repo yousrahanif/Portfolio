@@ -17,7 +17,7 @@ function App() {
     <>
      
    <Navbar></Navbar>
-   <Header></Header>
+   {/* <Header></Header> */}
    <AboutSection></AboutSection>
    <TechnicalSkills></TechnicalSkills>
    <EducationExperienceSection></EducationExperienceSection>

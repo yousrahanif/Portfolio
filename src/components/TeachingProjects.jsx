@@ -269,8 +269,9 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center text-purple-600">Scratch Projects</h4>
-        <p className="mb-4">
+        <h4 className="font-extrabold text-2xl mb-4 text-center bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
+  Scratch Projects
+</h4>        <p className="mb-4">
           For kids aged 5-10, Scratch introduces block coding concepts through engaging projects.
           Students work on fun games like catching ghosts, maze navigation, and creative animations, 
           building their problem-solving and logic skills.
@@ -285,7 +286,9 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center text-indigo-600">Web Development Projects</h4>
+        <h4 className="font-extrabold text-2xl mb-4 text-center bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text">
+  Web Development Projects
+</h4>
         <p className="mb-4">
           For students passionate about web development, we build portfolios, school websites, 
           and interactive projects. These classes teach JavaScript, HTML, and CSS fundamentals, 
@@ -301,8 +304,9 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center text-pink-600">Python Projects</h4>
-        <p className="mb-4">
+        <h4 className="font-extrabold text-2xl mb-4 text-center bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 text-transparent bg-clip-text">
+  Python Projects
+</h4>        <p className="mb-4">
           Designed for students aged 10 and up, Python classes use Pixelpad to explore advanced coding concepts. 
           Students learn about objects, dictionaries, and lists by creating interactive games like space shooters 
           and turtle races.
@@ -317,8 +321,9 @@ const TeachingProjects = () => (
             className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center text-blue-600">Java Projects</h4>
-        <p className="mb-4">
+        <h4 className="font-extrabold text-2xl mb-4 text-center bg-gradient-to-r from-blue-500 via-teal-400 to-green-500 text-transparent bg-clip-text">
+  Java Projects
+</h4>        <p className="mb-4">
           Targeting 9th and 10th graders preparing for AP Computer Science, Java classes focus on 
           classes, objects, and functions. Students create projects like GUI-based calculators to apply 
           these concepts in real-world scenarios.
