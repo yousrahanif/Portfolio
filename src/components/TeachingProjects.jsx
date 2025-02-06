@@ -154,87 +154,176 @@
 
 // export default TeachingProjects;
 
+// import React from "react";
+// import packman from "../images/packman.png";
+// import pixelpad from "../images/jump.png";
+
+
+// import webDev from "../images/fihs.png";
+// import bank from "../images/bank.png";
+
+// const TeachingProjects = () => (
+//   <section id="teaching" className="p-10 bg-white">
+//     <h3 className="text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse">Teaching Projects</h3>
+//     <p className="text-center text-2xl mb-10">Here are some of the projects I’ve used to teach coding concepts:</p>
+//     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//       {/* Scratch Projects */}
+//       <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+//         <a href="#" className="block mb-4">
+//           <img
+//             src={packman}
+//             alt="Scratch Projects"
+//             className="w-full h-80 object-cover"
+//           />
+//         </a>
+//         <h4 className="font-bold text-lg mb-4 text-center">Scratch Projects</h4>
+//         <p className="mb-4">
+//           For kids aged 5-10, Scratch introduces block coding concepts through engaging projects.
+//           Students work on fun games like catching ghosts, maze navigation, and creative animations, 
+//           building their problem-solving and logic skills.
+//         </p>
+//       </div>
+//         {/* JavaScript, HTML, CSS Projects */}
+//         <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+//         <a href="#" className="block mb-4">
+//           <img
+//             src={webDev}
+//             alt="Web Development Projects"
+//             className="w-full h-80 object-cover"
+//           />
+//         </a>
+//         <h4 className="font-bold text-lg mb-4 text-center">Web Development Projects</h4>
+//         <p className="mb-4">
+//           For students passionate about web development, we build portfolios, school websites, 
+//           and interactive projects. These classes teach JavaScript, HTML, and CSS fundamentals, 
+//           focusing on responsive design and functionality.
+//         </p>
+//       </div>
+
+//       {/* Python Projects */}
+//       <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+//         <a href="#" className="block mb-4">
+//           <img
+//             src={pixelpad}
+//             alt="Python Projects"
+//             className="w-full h-80 object-cover"
+//           />
+//         </a>
+//         <h4 className="font-bold text-lg mb-4 text-center">Python Projects</h4>
+//         <p className="mb-4">
+//           Designed for students aged 10 and up, Python classes use Pixelpad to explore advanced coding concepts. 
+//           Students learn about objects, dictionaries, and lists by creating interactive games like space shooters 
+//           and turtle races.
+//         </p>
+//       </div>
+
+//       {/* Java Projects */}
+//       <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+//         <a href="#" className="block mb-4">
+//           <img
+//             src={bank}
+//             alt="Java Projects"
+//             className="w-full h-80 object-cover"
+//           />
+//         </a>
+//         <h4 className="font-bold text-lg mb-4 text-center">Java Projects</h4>
+//         <p className="mb-4">
+//           Targeting 9th and 10th graders preparing for AP Computer Science, Java classes focus on 
+//           classes, objects, and functions. Students create projects like GUI-based calculators to apply 
+//           these concepts in real-world scenarios.
+//         </p>
+//       </div>
+
+    
+//     </div>
+//   </section>
+// );
+
+// export default TeachingProjects;
 import React from "react";
 import packman from "../images/packman.png";
 import pixelpad from "../images/jump.png";
-
-
 import webDev from "../images/fihs.png";
 import bank from "../images/bank.png";
 
 const TeachingProjects = () => (
   <section id="teaching" className="p-10 bg-white">
-    <h3 className="text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse">Teaching Projects</h3>
-    <p className="text-center text-2xl mb-10">Here are some of the projects I’ve used to teach coding concepts:</p>
+    <h3 className="text-5xl font-extrabold text-center mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-pulse">
+      Teaching Projects
+    </h3>
+    <p className="text-center text-xl sm:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed">
+      Explore some of the most exciting projects I've created to teach coding! 
+      These projects span across <span className="font-bold text-indigo-600">Scratch</span>, 
+      <span className="font-bold text-purple-600"> Web Development</span>, 
+      <span className="font-bold text-pink-600"> Python</span>, and 
+      <span className="font-bold text-blue-600"> Java</span>—designed to make learning 
+      fun, interactive, and engaging for students of all ages.
+    </p>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Scratch Projects */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <a href="#" className="block mb-4">
           <img
             src={packman}
             alt="Scratch Projects"
-            className="w-full h-80 object-cover"
+            className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center">Scratch Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center text-purple-600">Scratch Projects</h4>
         <p className="mb-4">
           For kids aged 5-10, Scratch introduces block coding concepts through engaging projects.
           Students work on fun games like catching ghosts, maze navigation, and creative animations, 
           building their problem-solving and logic skills.
         </p>
       </div>
-        {/* JavaScript, HTML, CSS Projects */}
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      {/* Web Development Projects */}
+      <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <a href="#" className="block mb-4">
           <img
             src={webDev}
             alt="Web Development Projects"
-            className="w-full h-80 object-cover"
+            className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center">Web Development Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center text-indigo-600">Web Development Projects</h4>
         <p className="mb-4">
           For students passionate about web development, we build portfolios, school websites, 
           and interactive projects. These classes teach JavaScript, HTML, and CSS fundamentals, 
           focusing on responsive design and functionality.
         </p>
       </div>
-
       {/* Python Projects */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <a href="#" className="block mb-4">
           <img
             src={pixelpad}
             alt="Python Projects"
-            className="w-full h-80 object-cover"
+            className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center">Python Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center text-pink-600">Python Projects</h4>
         <p className="mb-4">
           Designed for students aged 10 and up, Python classes use Pixelpad to explore advanced coding concepts. 
           Students learn about objects, dictionaries, and lists by creating interactive games like space shooters 
           and turtle races.
         </p>
       </div>
-
       {/* Java Projects */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <a href="#" className="block mb-4">
           <img
             src={bank}
             alt="Java Projects"
-            className="w-full h-80 object-cover"
+            className="w-full h-80 object-cover rounded-md"
           />
         </a>
-        <h4 className="font-bold text-lg mb-4 text-center">Java Projects</h4>
+        <h4 className="font-bold text-lg mb-4 text-center text-blue-600">Java Projects</h4>
         <p className="mb-4">
           Targeting 9th and 10th graders preparing for AP Computer Science, Java classes focus on 
           classes, objects, and functions. Students create projects like GUI-based calculators to apply 
           these concepts in real-world scenarios.
         </p>
       </div>
-
-    
     </div>
   </section>
 );
