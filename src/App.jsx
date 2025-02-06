@@ -9,6 +9,7 @@ import TeachingProjects from './components/TeachingProjects'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import Accomplishments from './components/Accomplishments'
+import EducationExperienceSection from './components/EducationExperienceSection'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
    <Header></Header>
    <AboutSection></AboutSection>
    <TechnicalSkills></TechnicalSkills>
+   <EducationExperienceSection></EducationExperienceSection>
    <ProjectsSection></ProjectsSection>
    <TeachingProjects></TeachingProjects>
    <Accomplishments></Accomplishments>
